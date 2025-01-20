@@ -1,6 +1,5 @@
 # Rekomendasi Rute
 
-Buat summary dari proyek yang telah dikerjakan, sebaiknya memuat beberapa poin berikut.
 Proyek yang dibuat untuk menjawab salah satu permasalahan optimasi rute distribusi, yaitu membuat dan memetakan rute rekomendasi untuk distributor.
 - Tujuan: Membuat rekomendasi rute sebenarnya di lapangan yang digambarkan ke dalam peta dengan mempertimbangkan profil kendaraan, preferensi rute, radius pencarian rute, dan fitur-fitur lainnya
 - Menggunakan Open-source tools, yaitu
@@ -15,7 +14,6 @@ Step by step untuk menjalankan app atau API yang menjadi output dari proyek yang
 
 ```
 pip install -r requirements.txt
-
 ```
 File Code untuk menjalankan skrip perhitungan
 - preprocessing.ipynb, berguna untuk menggabungkan berbagai data dan melakukan perhitungan untuk memperoleh kolom yang diperlukan. Dalam proyek ini, data yang digabungkan adalah data desa Jawa Tengah, data alokasi pupuk yang diperoleh dari alokasai per kabupaten/kota dibagi dengan jumlah desa, dan data realisasi penjualan yang berasal dari Goods Issue Januari hingga Oktober 2024.
