@@ -6,7 +6,7 @@ Proyek yang dibuat untuk menjawab salah satu permasalahan optimasi rute distribu
 - Menggunakan Open-source tools, yaitu
 1. OR-TOOLS by Google untuk memperoleh titik kunjungan optimal berdasarkan kapasitas kendaraan, jumlah kendaraan, jarak antar titik, hingga jumlah permintaan antar titik
 2. Open Route Service, memperoleh rute sebenarnya di peta menggunakan geojson untuk memperoleh geometri titik lokasi latitude dan longitude dan dapat di gambarkan secara langsung ke dalam peta
-3. 
+
 ## Quickstart
 
 Step by step untuk menjalankan app atau API yang menjadi output dari proyek yang dikerjakan.
@@ -17,3 +17,9 @@ Step by step untuk menjalankan app atau API yang menjadi output dari proyek yang
 pip install -r requirements.txt
 
 ```
+File Code untuk menjalankan skrip perhitungan
+- preprocessing.ipynb, berguna untuk menggabungkan berbagai data dan melakukan perhitungan untuk memperoleh kolom yang diperlukan. Dalam proyek ini, data yang digabungkan adalah data desa Jawa Tengah, data alokasi pupuk yang diperoleh dari alokasai per kabupaten/kota dibagi dengan jumlah desa, dan data realisasi penjualan yang berasal dari Goods Issue Januari hingga Oktober 2024.
+- generate.ipynb, berguna untuk memperoleh jumlah optimal *clustering* data menggunakan algoritma K-Means, dimana variabel yang dihitung adalah nilai latitude dan longitude ditambah alokasi per bulan yang menjadi bobot
+- ORS_TOOLS_ALL_DATA, berguna untuk memperoleh rekomendasi titik kunjungan melalui OR-TOOLS per kendaraan dan penggambaran rute titik kunjungan tersebut ke dalam peta untuk memperoleh jarak sebenarnya di lapangan menggunakan data jalan yang diperoleh dari Open Route Service
+
+Catatan: Kode harus mengikuti template excel yang berada pada folder template jika ingin menjalankan kode tanpa masalah. Karena kode dibuat menggunakan nama kolom tersebut untuk pemrosesan data
