@@ -20,4 +20,7 @@ File Code untuk menjalankan skrip perhitungan
 - generate.ipynb, berguna untuk memperoleh jumlah optimal *clustering* data menggunakan algoritma K-Means, dimana variabel yang dihitung adalah nilai latitude dan longitude ditambah alokasi per bulan yang menjadi bobot
 - ORS_TOOLS_ALL_DATA, berguna untuk memperoleh rekomendasi titik kunjungan melalui OR-TOOLS per kendaraan dan penggambaran rute titik kunjungan tersebut ke dalam peta untuk memperoleh jarak sebenarnya di lapangan menggunakan data jalan yang diperoleh dari Open Route Service
 
-Catatan: Kode harus mengikuti template excel yang berada pada folder template jika ingin menjalankan kode tanpa masalah. Karena kode dibuat menggunakan nama kolom tersebut untuk pemrosesan data
+**Catatan**: Kode harus mengikuti template penamaan kolom excel yang dipakai masing-masing kode supaya kode dapat berjalan dengan lancar
+- preprocessing.ipynb (desa_8264.xlsx + alokasi_jawa_tengah.xlsx + GI_Jateng_Jan_Okt_2024.xlsx = desa_aws_8264.csv)
+- generate_cluster.ipynb (desa_aws_8264.csv -> desa_{dc} + distance_list_{dc}.json)
+- ORS_TOOLS_ALL_DATA (desa_{dc} + distance_list_{dc}.json)
