@@ -1,2 +1,0 @@
-Regional Administrative Boundaries in Indonesia from Kaggle
-https://www.kaggle.com/datasets/kingki19/regional-administrative-boundaries-in-indonesia?select=Batas_Wilayah_KelurahanDesa_10K_AR.shp
